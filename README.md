@@ -18,4 +18,4 @@ exit
 
 Set ws = CreateObject("Wscript.Shell")
 
-ws.run "cmd /c D:\Startup.bat",vbhide
+ws.run "cmd /c D:\wallpaper.bat",vbhide

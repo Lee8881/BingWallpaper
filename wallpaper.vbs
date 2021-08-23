@@ -1,3 +1,2 @@
 Set ws = CreateObject("Wscript.Shell")
-
-ws.run "cmd /c D:\wallpaper.bat",vbhide
+ws.run "cmd /c D:\Gits\BingWallpaper\wallpaper.bat",vbhide
