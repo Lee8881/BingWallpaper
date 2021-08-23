@@ -19,7 +19,7 @@ def get_wallpaper():
             status = s.connect_ex(('cn.bing.com', 443))
             print(status)
             break
-        except Exception as e:
+        except socket.gaierror as e:
             time.sleep(3)
             print("err")
 
