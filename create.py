@@ -22,7 +22,7 @@ def create_file():
     startup = winshell.startup()
     startup_path = os.path.join(startup, "startBingWallpaper.lnk")
     target = filepath
-    wDir = r""
+    wDir = path
     icon = path + "\icon.ico"
     print(icon)
 

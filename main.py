@@ -12,6 +12,7 @@ from lxml import etree
 
 def get_wallpaper():
     # 等待联网
+    time.sleep(3)
     while 1:
         try:
             url = "https://cn.bing.com"
