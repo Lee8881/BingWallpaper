@@ -1,25 +1,6 @@
 # BingWallpaper
-获取bing壁纸 , 开机自动设置 
+获取bing壁纸并设置桌面
 
- 
+首次运行,点击安装
+卸载删除文件夹和启动中的startBingWallpaper即可
 
-设置BingWallpaper作为桌面背景
-批处理执行
-
-@echo off
-
-D:
-
-cd D:\Gits\BingWallpaper
-
-start pythonw main.py
-
-exit
-
-
-利用.vbs文件去执行上述批处理（隐藏批处理运行窗口）
-
-
-Set ws = CreateObject("Wscript.Shell")
-
-ws.run "cmd /c D:\wallpaper.bat",vbhide

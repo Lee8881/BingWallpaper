@@ -12,17 +12,16 @@ from lxml import etree
 
 def get_wallpaper():
     # 等待联网
-    s = socket.socket()
-    s.settimeout(3)
     while 1:
         try:
-            status = s.connect_ex(('cn.bing.com', 443))
-            print(status)
-            break
-        except socket.gaierror as e:
-            time.sleep(3)
-            print("err")
-
+            url = "https://cn.bing.com"
+            status_code = requests.get(url=url).status_code
+            print(status_code)
+            if status_code == 200:
+                break
+        except Exception as e:
+                time.sleep(3)
+                print("err")
     # 发送请求
     url = "https://cn.bing.com"
     res = requests.get(url=url)
