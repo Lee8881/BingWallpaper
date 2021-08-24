@@ -5,3 +5,4 @@
 
 卸载删除文件夹和启动中的startBingWallpaper即可
 
+在win7下测试可用

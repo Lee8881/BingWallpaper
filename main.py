@@ -1,5 +1,4 @@
 import os
-import socket
 import time
 import requests
 import win32api
